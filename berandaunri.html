@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Universitas Riau</title>
+  <!-- Menggunakan Bootstrap dari CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Link ke Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="icon" href="aset\logo_unri-removebg-preview.png" type="image/x-icon">
+  <style>
+    @media (max-width: 576px) {
+        .hide-on-mobile {
+            display: none;
+        }
+        .header-row {
+            flex-wrap: wrap;
+        }
+        .logo-col {
+            flex: 1 0 100%;
+            margin-bottom: 10px; /* Menambahkan jarak antara logo dan input text */
+        }
+        .search-col {
+            flex: 1 0 50%;
+            max-width: 50%;
+        }
+        .search-input {
+            margin-right: 5px; /* Menambahkan jarak antara input text dan tombol search */
+        }
+        .logo{
+          max-width: 250px;
+        }
+    }
+    .content h5, .content p{
+      color: #FFFFFF;
+    }
+    .ijo{
+      background-color: #00923F;
+    }
+    .link-lainnya {
+        text-decoration: none;
+        color: #000000;
+    }
+    .judul-side{
+        margin-top: 20px;
+    }
+    .btn-custom {
+        background-color: #ffffff;
+        color: #808080;
+        font-weight: bold;
+    }
+    .footer h5{
+      border-bottom: 2px solid #00D35B; /* Tambahkan garis di bawah teks judul */
+      padding-bottom: 5px; /* Berikan sedikit ruang di bawah judul */
+      font-size: 20px; /* Ukuran teks judul */
+      color: #FFFFFF;
+    }
+    .footer p{
+      color: #FFFFFF;
+    }
+    .social-media-list {
+      list-style-type: none;
+      padding: 0;
+    }
+    .social-media-list li {
+      margin-bottom: 10px;
+    }
+    .social-media-list li i {
+      color: white; /* Mengubah warna ikon menjadi putih */
+      margin-right: 10px;
+      font-size: 20px; /* Menambahkan ukuran ikon */
+    }
+    .social-media-list li span {
+      color: white; /* Mengubah warna teks menjadi putih */
+      font-size: 18px; /* Menambahkan ukuran teks */
+    }
+    .konten{
+        margin-bottom: 20px;
+        margin-right: 20px;
+    }
+    .konten h5{
+        font-size: 15px;
+    }
+  </style>
+  
+</head>
+
+<body>
+
+<div class="container-fluid">
+    <!-- Baris Atas -->
+    <div class="hide-on-mobile row align-items-center justify-content-end" style="height: 40px; background-color: #D9D9D9;">
+        <div class="col-auto">
+            <!-- Link Universitas -->
+            <a href="#" style="color: black;">Universitas Riau</a>
+        </div>
+        <div class="col-auto">
+            <!-- Link Instagram -->
+            <a href="#" style="color: black;"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="col-auto">
+            <!-- Link Twitter -->
+            <a href="#" style="color: black;"><i class="fab fa-xing"></i></a>
+        </div>
+        <div class="col-auto">
+            <!-- Link Youtube -->
+            <a href="#" style="color: black;"><i class="fab fa-youtube"></i></a>
+        </div>
+        <div class="col-auto">
+            <!-- Link Pendaftaran -->
+            <a href="#" style="color: black;">Pendaftaran</a>
+        </div>
+    </div>
+  
+    <!-- Header -->
+    <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #040e01;"></nav>
+    
+<header class="py-3">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Logo -->
+            <div class="col-12 col-md-4 text-center mb-3 mb-md-0">
+                <a class="text-muted" href="#">
+                    <img width="350px" class="logo" src="aset\logo-unri21-Blu-1.png" alt="Logo" >
+                </a>
+            </div>
+            <div class="col-12 col-md-4 text-center">
+
+            </div>
+            <!-- Search Box dan Tombol -->
+            <div class="col-12 col-md-4 text-center">
+                <div class="row justify-content-end align-items-center">
+                    <div class="col-8">
+                        <input type="text" class="form-control" style="max-height: 31px; max-width: 318px;" placeholder="Search">
+                    </div>
+                    <div class="col-4">
+                        <button class="btn btn-outline-success btn-block" type="submit">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+    
+<!-- Nav -->
+<nav class="navbar navbar-expand-md navbar-dark" style="background-color: #013eaf;">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      Menu
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+              <a class="nav-link active" href="#">Beranda</a>
+          </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="pendidikanDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pendidikan</a>
+              <div class="dropdown-menu" aria-labelledby="pendidikanDropdown">
+                  <div class="container">
+                      <div class="row">
+                          <div class="col-md-auto">
+                              <a class="dropdown-item" href="#"><h6>Fakultas</h6></a>
+                              <a class="dropdown-item" href="#">Fakultas Teknik</a>
+                              <a class="dropdown-item" href="#">Fakultas Ekonomi</a>
+                              <a class="dropdown-item" href="#">Fakultas Ilmu Sosial dan Politik</a>
+                          </div>
+                          <div class="col-md-auto">
+                              <a class="dropdown-item" href="#"><h6>Program Pendidikan</h6></a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="tentangUnriDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tentang UNRI</a>
+              <div class="dropdown-menu" aria-labelledby="tentangUnriDropdown">
+                <div class="container">
+                  <div class="row">
+                      <div class="col-md-auto">
+                        <a class="dropdown-item" href="#"><h6>Visi, Misi & Tugas</h6></a>
+                        <a class="dropdown-item" href="#">Visi Misi</a>
+                        <a class="dropdown-item" href="#">Tugas dan Fungsi UNRI</a>
+                      </div>
+                      <div class="col-md-auto">
+                          <a class="dropdown-item" href="#"><h6>Sekilas UNRI</h6></a>
+                          <a class="dropdown-item" href="#">Sambutan Rektor</a>
+                          <a class="dropdown-item" href="#">Sejarah</a>
+                          <a class="dropdown-item" href="#">Lambang UNRI</a>
+                          <a class="dropdown-item" href="#">Hymne UNRI</a>
+                          <a class="dropdown-item" href="#">Mars UNRI</a>
+                          <a class="dropdown-item" href="#">Peta Kampus</a>
+                        </div>
+                  </div>
+              </div>
+              </div>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#">Penelitian</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#">Mahasiswa</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#">Internasional</a>
+          </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="sistemInformasiDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sistem Informasi</a>
+              <div class="dropdown-menu" aria-labelledby="sistemInformasiDropdown">
+                  <a class="dropdown-item" href="#"><h6>Sistem Informasi Akademik</h6></a>
+                  <a class="dropdown-item" href="#">Insentif Penelitian dan Pengabdian</a>
+                  <a class="dropdown-item" href="#">Karir dan Wirausaha</a>
+                  <a class="dropdown-item" href="#">Layan Universitas Riau</a>
+                  <a class="dropdown-item" href="#">Portal Kuliah Kerja Nyata</a>
+                  <a class="dropdown-item" href="#">Portal Mahasiswa dan Dosen</a>
+                  <a class="dropdown-item" href="#">Sistem Informasi Admisi</a>
+                  <a class="dropdown-item" href="#">Sistem Informasi Penelitian</a>
+                  <a class="dropdown-item" href="#">Sistem Informasi Registrasi Ulang</a>
+                  <a class="dropdown-item" href="#">SISTER</a>
+              </div>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#">Pendaftaran</a>
+          </li>
+      </ul>
+  </div>
+</nav>
+
+    <!-- Content -->
+    <!-- Video -->
+    <video autoplay muted loop style="width:100%;">
+      <source src="aset\videoplayback.webm" type="video/mp4">
+      <!-- Fallback content jika browser tidak mendukung tag video -->
+      Your browser does not support the video tag.
+    </video>
+    
+      <div class="row" style="margin: auto; margin-top: 20px; margin-bottom: 20px;">
+        <!-- Main Content -->
+        <div class="col-lg-9" style="margin-bottom: 20px;">
+          <h5>Tentang UNRI</h5>
+          <p>Turut mengahasilkan SDM yang unggul di tingkat pendidikan tinggi sejak 1962 baik di Provinsi Riau maupun Skala nasional. Meningkatkan dan memperkokoh daya saing SDM melalui tri dharma pergurauan tinggi: pendidikan & pengajaran, penelitian, dan pengabdian kepada masyarakat. Berkontribusi dalam memenuhi kebutuhan teknologi, menciptakan lapangan kerja, pertumbuhan ekonomi regional dan nasional. Menyediakan dan mengatur pendanaan bagi penyediaan sarana dan prasarana pendidikan serta penyelenggaraan pendidikan sesuai dengan standar dengan mutu terbaik.</p>
+          <div class="berita">
+          <h5 style=" margin-bottom: 10px;">Berita</h5>
+          <div class="row konten">
+            <div class="col-auto">
+                <img width="89px" height="73px" src="aset\gambar1_1.gif">
+            </div>
+            <div class="col">
+              MARCH 22, 2024<br>
+                <h5>Sejarah Baru Bagi UNRI, 8 Mahasiswa Lolos Program Bergengsi Indonesian International Student Mobility Awards (IISMA)</h5>
+            </div>
+          </div>
+          <div class="row konten">
+            <div class="col-auto">
+                <img width="89px" height="73px" src="aset\gambar1_2.gif">
+            </div>
+            <div class="col">
+              MARCH 21, 2024<br>
+                <h5>Berkunjung ke UNRI, BI Riau Sampaikan Beasiswa</h5>
+            </div>
+          </div>
+          <div class="row konten">
+            <div class="col-auto">
+                <img width="89px" height="73px" src="aset\gambar1_3.gif">
+            </div>
+            <div class="col">
+              MARCH 20, 2024<br>
+                <h5>UNRI Jalin Kerja Sama dengan Kadin Dumai</h5>
+            </div>
+          </div>
+          <div class="row konten">
+            <div class="col-auto">
+                <img width="89px" height="73px" src="aset\gambar1_4.gif">
+            </div>
+            <div class="col">
+              MARCH 19, 2024<br>
+                <h5>Rektor UNRI Jadi Saksi Pelantikan PJ. Sekda Provinsi Riau</h5>
+            </div>
+          </div>
+        </div>
+        <div class="pengumuman">
+            <h5 style=" margin-bottom: 10px;">Pengumuman</h5>
+            <div class="row konten">
+              <div class="col-auto">
+                  <img width="89px" height="73px" src="aset\pengumuman1.jpg">
+              </div>
+              <div class="col">
+                JANUARY 31, 2024<br>
+                  <h5>Hasil Evaluasi Daya Tampung Program Studi Yang Terdeteksi Kenaikan Anomali</h5>
+              </div>
+            </div>
+            <div class="row konten">
+              <div class="col-auto">
+                  <img width="89px" height="73px" src="aset\pengumuman2.jpg">
+              </div>
+              <div class="col">
+                JANUARY 3, 2024<br>
+                  <h5>Pembayaran UKT/SPP Semester Genap tahun Akademik 2024/2024</h5>
+              </div>
+            </div>
+            <div class="row konten">
+                <div class="col-auto">
+                    <img width="89px" height="73px" src="aset\pengumuman3.jpg">
+                </div>
+                <div class="col">
+                  DECEMBER 28, 2023<br>
+                    <h5>Pengajuan Revisi UKT Mahasiswa Angkatan 2023 Pemegang KIP Kuliah yang Tidak Termasuk Penerima Beasiswa KIP Kuliah</h5>
+                </div>
+              </div>
+            <div class="row konten">
+              <div class="col-auto">
+                  <img width="89px" height="73px" src="aset\pengumuman4.jpg">
+              </div>
+              <div class="col">
+                OCTOBER 12, 2023<br>
+                  <h5>Pengajuan Revisi UKT Semester Genap Tahun 2023/2024</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Sidebar -->
+        <div class="col-lg-3" style="background-color: #D9D9D9;">
+            <h5 class="judul-side" style="text-decoration: underline;">Organisasi</h5>
+            <a class="link-lainnya" href="#">Raktorat<br></a> 
+            <a class="link-lainnya" href="#">Senat Akademik<br></a> 
+            <a class="link-lainnya" href="#">Dewan Pengawas<br></a> 
+            <a class="link-lainnya" href="#">Unit Pelaksana Teknis, Badan dan RSP<br></a> 
+            <a class="link-lainnya" href="#">Biro<br></a>
+            <h5 class="judul-side" style="text-decoration: underline;">Penerimaan Mahasiswa Baru</h5>
+            <a class="link-lainnya" href="#">SNBP & SNBT<br></a> 
+            <a class="link-lainnya" href="#">PMB Jalur PBUD/PBM<br></a> 
+            <a class="link-lainnya" href="#">PMB Mandiri<br></a> 
+            <h5 class="judul-side" style="text-decoration: underline;">Layanan IT</h5>
+            <a class="link-lainnya" href="#">Akun Email<br></a> 
+            <a class="link-lainnya" href="#">Domain Website<br></a> 
+            <a class="link-lainnya" href="#">Titik Access Point Lingkungan UNRI<br></a> 
+            <a class="link-lainnya" href="#">Dosen dan Mahasiswa Terkendala Login LMS Selasi<br></a> 
+            <a class="link-lainnya" href="#">Perbaikan Data Civitas Akademika<br></a> 
+            <a class="link-lainnya" href="#">Blog Staff</a>
+            <a class="link-lainnya" href="#">VPN UNRI</a>
+            <h5 class="judul-side" style="text-decoration: underline;">Link Terkait</h5>
+            <a class="link-lainnya" href="#">PPID UNRI<br></a> 
+            <a class="link-lainnya" href="#">Layanan Aspirasi dan Pengaduan Online Rakyat<br></a> 
+            <a class="link-lainnya" href="#">Inspektorat Jenderal Kemdikbudristek Whistleblowing System<br></a> 
+            <a class="link-lainnya" href="#">Satgas PPKS UNRI<br></a> 
+            <br><br> 
+          </div>
+      </div>
+
+      <!-- Konten Lanjutan -->
+      <div class="row" style="margin: auto; margin-bottom: 20px;">
+        <div class="col ijo" style="padding-top: 20px; padding-bottom: 20px;">
+            <div class="content text-center">
+                <h5>PROGRAM SARJANA</h5>
+                <p>Program sarjana bisa diikuti oleh lulusan SMA/SMK/MA/MAK, mempunyai beban studi 144-160 sks dan dapat ditempuh dalam waktu 8-14 semester.</p>
+                <button class="btn btn-custom">Baca Selengkapnya</button>
+            </div>
+        </div>
+        <div class="col" style="padding-top: 20px; padding-bottom: 20px; background-color: #00D35B;">
+            <div class="content text-center">
+                <h5>PROGRAM PASCASARJANA</h5>
+                <p>UNRI menawarkan program studi lanjutan di tingkat S2 dan S3 yang diselenggarakan di fakultas serta sekolah Pascasarjana.</p>
+                <button class="btn btn-custom">Baca Selengkapnya</button>
+            </div>
+        </div>
+        <div class="col ijo" style="padding-top: 20px; padding-bottom: 20px;">
+            <div class="content text-center">
+                <h5>PROGRAM PROFESI</h5>
+                <p>Program profesi diperuntukkan sebagai bagi lulusan program studi tertentu sebagai syarat untuk mendapatkan gelar keprofesian.</p>
+                <button class="btn btn-custom">Baca Selengkapnya</button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+          <div class="card text-white bg-primary mb-3">
+              <div class="card-body">
+                  <h5 class="card-title">Guru Besar</h5>
+                  <p class="card-text">63</p>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4">
+          <div class="card text-white bg-secondary mb-3">
+              <div class="card-body">
+                  <h5 class="card-title">Fakultas</h5>
+                  <p class="card-text">6</p>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4">
+          <div class="card text-white bg-success mb-3">
+              <div class="card-body">
+                  <h5 class="card-title">Dosen</h5>
+                  <p class="card-text">680</p>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+  <div class="row">
+      <div class="col-md-4">
+          <div class="card text-white bg-danger mb-3">
+              <div class="card-body">
+                  <h5 class="card-title">Mahasiswa</h5>
+                  <p class="card-text">20565</p>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4">
+          <div class="card text-white bg-warning mb-3">
+              <div class="card-body">
+                  <h5 class="card-title">Program Studi</h5>
+                  <p class="card-text">64</p>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4">
+          <div class="card text-white bg-info mb-3">
+              <div class="card-body">
+                  <h5 class="card-title">Tenaga Kependidikan</h5>
+                  <p class="card-text">525</p>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+      <footer class="footer" style="background-color: #434242; margin: 0;">
+        <div class="container-fluid" style="padding: 20px; margin: 0;">
+          <div class="row">
+            <!-- Kolom pertama -->
+            <div class="col-md-4">
+              <h5>Kontak</h5>
+              <p>Kampus Bina Widya KM. 12,5,<br>
+                Simpang Baru, Kec. Tampan,<br>
+                Kota Pekanbaru, Riau 28293
+                (0761) 63266<br><br>
+                rektor@unri.ac.id
+            </div>
+            <!-- Kolom kedua -->
+            <div class="col-md-8">
+                <h5>Peta</h5>
+                <!-- Map Container -->
+                <div id="map" style="height: 300px;"></div>
+            </div>
+          </div>
+        </div>
+      </footer>
+</div>
+
+<!-- Google Maps JavaScript API -->
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+
+<script>
+    // Initialize and add the map
+    function initMap() {
+        // Location coordinates
+        var location = { lat: -0.7893, lng: 113.9213 }; // Contoh koordinat
+
+        // Create a map object and specify the DOM element for display.
+        var map = new google.maps.Map(document.getElementById('map'), {
+            center: location,
+            zoom: 15 // Set the initial zoom level
+        });
+
+        // Create a marker and set its position.
+        var marker = new google.maps.Marker({
+            map: map,
+            position: location,
+            title: 'Universitas Riau' // Tooltip text
+        });
+    }
+</script>
+
+<!-- Initialize Google Maps -->
+<script>
+    // Run initMap function after page loads
+    window.onload = function () {
+        initMap();
+    };
+</script>
+<!-- Menggunakan Bootstrap JavaScript dari CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- JavaScript Bootstrap (Popper.js required for dropdowns, tooltips, and popovers) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+<script>
+    // Mengaktifkan dropdown saat mouse hover
+    document.querySelectorAll('.nav-item.dropdown').forEach(function(item) {
+      item.addEventListener('mouseenter', function() {
+        this.querySelector('.dropdown-menu').classList.add('show');
+      });
+  
+      item.addEventListener('mouseleave', function() {
+        this.querySelector('.dropdown-menu').classList.remove('show');
+      });
+    });
+  </script>
+</html>
